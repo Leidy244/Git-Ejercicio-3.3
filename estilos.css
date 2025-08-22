@@ -1,0 +1,223 @@
+/* --- ESTILOS GENERALES --- */
+body {
+    margin: 0;
+    padding-top: 70px;
+    /* Espacio para la barra fija */
+    font-family: system-ui, sans-serif;
+    background: url("imagenes/fondo2.jpg");
+}
+
+/* --- TÍTULO PRINCIPAL --- */
+h1 {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 70px;
+    color: #d93aeb;
+    margin-top: 20px;
+}
+
+/*Tirulo de cada pagina*/
+h2 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 55px;
+    font-family: 'Fredoka One', cursive;
+}
+
+/*Subtitulos*/
+h3 {
+    text-align: center;
+    font-style: italic;
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+}
+
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+p {
+    text-align: justify;
+    margin: 10px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+/* --- IMAGEN CENTRAL --- */
+img {
+    display: block;
+    width: 600px;
+    max-width: 90%;
+    height: auto;
+    margin: 90px auto 20px;
+
+}
+
+#Quiensoy {
+    margin-top: 30px;
+    width: 400px;
+}
+
+/* --- BARRA DE NAVEGACIÓN FIJA --- */
+.navbar {
+    background-color: #272846;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+.navbar a {
+    float: left;
+    color: #ffffff;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+/* --- MENÚ LATERAL DESPLEGABLE --- */
+.menu {
+    width: 0;
+    position: fixed;
+    top: 0;
+    background-color: #272846;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    background-color: #575757;
+}
+
+.menu:target {
+    width: 200px;
+}
+
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Hacer que los links no tengan color morado despues de darles click */
+a:visited {
+    color: white;
+}
+
+/*Targetas de imagenes de "mis amigos"*/
+.card {
+    margin: auto;
+    background-color: antiquewhite;
+    text-align: justify;
+    border-radius: 15px;
+}
+
+.imgAmigos {
+    width: 300px;
+}
+
+.card {
+    width: 30rem;
+}
+
+/*Imagenes pagina "mi dia a dia"*/
+.imgDia {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    padding-left: 200px;
+}
+
+.contenedor img {
+    height: auto;
+    margin: 20px 20px;
+}
+
+/*Contenedor de "como entrenar a tu humano" */
+.container {
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 10px;
+    /* NUEVO: añade padding interno para evitar que el contenido toque los bordes */
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+    /* NUEVO: previene que se desborde horizontalmente */
+    border: 2px solid #d4af37;
+}
+
+
+.technique {
+    padding: 20px 20px 20px 45px;
+    /* Aumenta padding izquierdo */
+    background: #FFF8E1;
+    border-left: 5px solid #FFD54F;
+    margin: 20px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.technique::before {
+    content: "🐾";
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    opacity: 0.15;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+
+.technique:hover {
+    transform: translateY(-5px);
+    /*Se mueve al pasar el cursor*/
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Pie de página */
+footer {
+    background: #272846;
+    color: #FFEBCD;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    position: relative;
+}
+
+footer::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+}
